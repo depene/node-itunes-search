@@ -12,12 +12,12 @@ import {
 } from "../media/entity";
 
 export enum ItunesLookupType {
-  ID = "id",
-  AMGARTISTID = "amgArtistId",
-  AMGALBUMID = "amgAlbumId",
-  AMGVIDEOID = "amgVideoId",
-  UPC = "upc",
-  ISBN = "isbn"
+  Id = "id",
+  AmgArtistId = "amgArtistId",
+  AmgAlbumId = "amgAlbumId",
+  AmgVideoId = "amgVideoId",
+  Upc = "upc",
+  Isbn = "isbn"
 }
 
 export function toLookupUri(options: ILookupOptions): string {
