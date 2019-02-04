@@ -16,7 +16,7 @@ describe("Search Examples", () => {
   });
 });
 
-import { lookupItunes, ItunesResult, ItunesLookupType, ItunesLookupOptions } from "../src/index";
+import {lookupItunes, ItunesResult, ItunesLookupType, ItunesLookupOptions} from "../src/index";
 
 describe("Lookup Examples", () => {
   test("Lookup Song by ID", () => {
@@ -24,7 +24,7 @@ describe("Lookup Examples", () => {
 
     const lookupOptions = new ItunesLookupOptions({
       keys: ["560857776"],
-      keyType: ItunesLookupType.ID
+      keyType: ItunesLookupType.Id
     });
 
     return lookupItunes(lookupOptions).then((result: ItunesResult) => {
@@ -61,7 +61,7 @@ describe("Lookup Examples (2.0.0)", () => {
 
     const lookupOptions: ItunesSearch.LookupOptionsInterface = {
       keys: ["560857776"],
-      keyType: ItunesSearch.LookupType.ID
+      keyType: ItunesSearch.LookupType.Id
     };
 
     const result: ItunesSearch.Result = await ItunesSearch.lookup(lookupOptions);

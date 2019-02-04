@@ -10,7 +10,7 @@ import {
 describe("Lookup", () => {
   test("Correct Lookup Format", () => {
     const key = "560857776";
-    const type = ItunesLookupType.ID;
+    const type = ItunesLookupType.Id;
 
     const lookupOptions = new ItunesLookupOptions({
       keys: [key],
@@ -22,7 +22,7 @@ describe("Lookup", () => {
 
   test("Correct Lookup Format With Limit", () => {
     const key = "560857776";
-    const type = ItunesLookupType.ID;
+    const type = ItunesLookupType.Id;
 
     const lookupOptions = new ItunesLookupOptions({
       keys: [key],
@@ -38,7 +38,7 @@ describe("Lookup", () => {
 
     const lookupOptions = new ItunesLookupOptions({
       keys: ["560857776"],
-      keyType: ItunesLookupType.ID
+      keyType: ItunesLookupType.Id
     });
 
     return lookupItunes(lookupOptions).then((result: ItunesResult) => {
@@ -51,7 +51,7 @@ describe("Lookup", () => {
 
     const lookupOptions = new ItunesLookupOptions({
       keys: ["1244891740"],
-      keyType: ItunesLookupType.ID,
+      keyType: ItunesLookupType.Id,
       entity: ItunesEntityMusic.Song,
       limit: 1
     });

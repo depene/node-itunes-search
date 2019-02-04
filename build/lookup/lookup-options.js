@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var ItunesLookupType;
 (function (ItunesLookupType) {
-    ItunesLookupType["ID"] = "id";
-    ItunesLookupType["AMGARTISTID"] = "amgArtistId";
-    ItunesLookupType["AMGALBUMID"] = "amgAlbumId";
-    ItunesLookupType["AMGVIDEOID"] = "amgVideoId";
-    ItunesLookupType["UPC"] = "upc";
-    ItunesLookupType["ISBN"] = "isbn";
+    ItunesLookupType["Id"] = "id";
+    ItunesLookupType["AmgArtistId"] = "amgArtistId";
+    ItunesLookupType["AmgAlbumId"] = "amgAlbumId";
+    ItunesLookupType["AmgVideoId"] = "amgVideoId";
+    ItunesLookupType["Upc"] = "upc";
+    ItunesLookupType["Isbn"] = "isbn";
 })(ItunesLookupType = exports.ItunesLookupType || (exports.ItunesLookupType = {}));
 function toLookupUri(options) {
     // Converting all keys to comma seperated string

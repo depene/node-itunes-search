@@ -1,11 +1,11 @@
 import { ItunesEntityMovie, ItunesEntityPodcast, ItunesEntityMusic, ItunesEntityMusicVideo, ItunesEntityAudioBook, ItunesEntityShortFilm, ItunesEntityTvShow, ItunesEntitySoftware, ItunesEntityEbook, ItunesEntityAll } from "../media/entity";
 export declare enum ItunesLookupType {
-    ID = "id",
-    AMGARTISTID = "amgArtistId",
-    AMGALBUMID = "amgAlbumId",
-    AMGVIDEOID = "amgVideoId",
-    UPC = "upc",
-    ISBN = "isbn"
+    Id = "id",
+    AmgArtistId = "amgArtistId",
+    AmgAlbumId = "amgAlbumId",
+    AmgVideoId = "amgVideoId",
+    Upc = "upc",
+    Isbn = "isbn"
 }
 export declare function toLookupUri(options: ILookupOptions): string;
 export interface ILookupOptions {
