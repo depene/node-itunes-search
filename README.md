@@ -1,4 +1,4 @@
-# node-itunes-search [![npm](https://img.shields.io/npm/v/node-itunes-search.svg)](https://www.npmjs.com/package/node-itunes-search) [![Build Status](https://travis-ci.org/jacob-shuman/node-itunes-search.svg?branch=master)](https://travis-ci.org/jacob-shuman/node-itunes-search)
+# node-itunes-search [![npm](https://img.shields.io/npm/v/node-itunes-search.svg)](https://www.npmjs.com/package/node-itunes-search) [![Build Status](https://travis-ci.org/jacob-shuman/node-itunes-search.svg?branch=v2.0.0)](https://travis-ci.org/jacob-shuman/node-itunes-search)
 
 > A simple NodeJS wrapper for the ITunes Search API.
 
