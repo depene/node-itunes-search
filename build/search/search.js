@@ -8,7 +8,10 @@ function searchItunes(options) {
         const phin = require("phin");
         //Initializing passed options (adding methods when directly passing an object)
         const searchOptions = search_options_1.ItunesSearchOptions.from(options);
-        phin(`${exports.itunesSearchRoot}?${searchOptions.toURI()}`, (err, res) => {
+        phin({
+            url: `${exports.itunesSearchRoot}?${searchOptions.toURI()}`,
+            core: options.requestOptions,
+        }, (err, res) => {
             if (err) {
                 reject(err);
             }
