@@ -10,7 +10,10 @@ export function searchItunes(options: ISearchOptions | ItunesSearchOptions): Pro
     //Initializing passed options (adding methods when directly passing an object)
     const searchOptions: ItunesSearchOptions = ItunesSearchOptions.from(options);
 
-    phin(`${itunesSearchRoot}?${searchOptions.toURI()}`, (err: any, res: any) => {
+    phin({
+      url: `${itunesSearchRoot}?${searchOptions.toURI()}`,
+      core: options.requestOptions,
+    }, (err: any, res: any) => {
       if (err) {
         reject(err);
       } else {

@@ -11,6 +11,7 @@ import {
   ItunesEntityEbook,
   ItunesEntityAll
 } from "../media/entity";
+import { RequestOptions } from "http";
 
 export function toSearchUri(options: ISearchOptions): string {
   const searchTerm: string = "term=" + options.term;
@@ -72,6 +73,9 @@ export interface ISearchOptions {
 
   // Converts object to URI safe parameters
   toURI?: () => string;
+
+  // Core HTTP request options
+  requestOptions?: RequestOptions;
 }
 
 export class ItunesSearchOptions {
