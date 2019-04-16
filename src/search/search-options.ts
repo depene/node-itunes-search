@@ -96,6 +96,7 @@ export class ItunesSearchOptions {
   limit?: number;
   lang?: "en_us" | "ja_jp";
   extras?: {};
+  requestOptions?: RequestOptions;
 
   constructor(options: {
     term: string;
